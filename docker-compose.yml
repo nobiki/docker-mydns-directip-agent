@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  mydns:
+    image: mydns:latest
+    environment:
+      - INTERVAL_MINUTE=1
+      - VERSION=IPV4ADDR
+      - MYDNS_URL=http://www.mydns.jp/directip.html
+      - MYDNS_ID=IDIDIDID
+      - MYDNS_PW=PWPWPWPW
+    tty: true
+
