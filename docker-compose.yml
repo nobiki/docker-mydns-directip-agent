@@ -2,7 +2,7 @@ version: '2'
 
 services:
   mydns-directip-agent:
-    image: nobiki/docker-mydns-directip-agent:latest
+    image: nobiki/mydns-directip-agent:latest
     environment:
       - VERSION=IPV4ADDR
       - MYDNS_URL=http://www.mydns.jp/directip.html
