@@ -1,13 +1,12 @@
 version: '2'
 
 services:
-  mydns:
-    image: mydns:latest
+  mydns-directip-agent:
+    image: nobiki/docker-mydns-directip-agent:latest
     environment:
-      - INTERVAL_MINUTE=1
       - VERSION=IPV4ADDR
       - MYDNS_URL=http://www.mydns.jp/directip.html
-      - MYDNS_ID=IDIDIDID
-      - MYDNS_PW=PWPWPWPW
+      - MYDNS_ID=[YOUR_MID]
+      - MYDNS_PW=[YOUR_PASSWORD]
     tty: true
 
