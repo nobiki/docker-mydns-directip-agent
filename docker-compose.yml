@@ -8,5 +8,6 @@ services:
       - MYDNS_URL=http://www.mydns.jp/directip.html
       - MYDNS_ID=[YOUR_MID]
       - MYDNS_PW=[YOUR_PASSWORD]
+    restart: always
     tty: true
 
